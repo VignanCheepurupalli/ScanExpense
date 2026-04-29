@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ── New Toolbar host ──────────────────────────────── -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/historyToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="@string/app_name"
+        app:titleTextColor="@android:color/white"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <!-- RecyclerView consumes the rest of the screen -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/receiptRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/historyProgress"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:indicatorSize="48dp"
+        app:indicatorInset="4dp" />
+
+    <!-- FAB anchored bottom-right -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addManualButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        app:backgroundTint="@color/purple"
+        app:tint="@android:color/white" />
+
+</LinearLayout>

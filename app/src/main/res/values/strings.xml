@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AndroidFinalProject</string>
+    <string name="login">Login</string>
+    <string name="login_hint">Enter your email</string>
+    <string name="password">Password</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="login_button">Sign In</string>
+
+    <string name="welcome_message">Welcome to ScanExpense</string>
+    <string name="capture_receipt">Capture Receipt</string>
+    <string name="capture">Capture</string>
+
+    <string-array name="receipt_categories">
+        <item>Uncategorized</item>
+        <item>Food</item>
+        <item>Travel</item>
+        <item>Games</item>
+        <item>Electronics</item>
+        <item>Clothing</item>
+        <item>Health</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="scanner">Scan Receipt</string>
+    <string name="ocr">Extract Text</string>
+    <string name="auto_category">Auto Categorization</string>
+    <string name="expense_history">Expense History</string>
+    <string name="analytics_dashboard">Analytics Dashboard</string>
+    <string name="spending_limit_alerts">Spending Limit Alerts</string>
+    <string name="calendar_entries">Calendar Entries</string>
+    <string name="smart_location_logging">Smart Location Logging</string>
+    <string name="menu_export_pdf">Export PDF</string>
+
+</resources>
